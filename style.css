@@ -21,3 +21,13 @@ img{
 .prova{
     border: 1px solid black; 
 }
+
+.sms{
+    border: 1px solid rgb(233, 235, 235);
+}
+.sfondoContat{
+    background-color: white;
+}
+.sfondoNotific{
+    background-color: rgb(142, 218, 252);
+}
