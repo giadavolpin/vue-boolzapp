@@ -23,6 +23,7 @@
 }
 .sfondo-contat{
     background-color: var(--michele);
+    overflow-y: auto;
 }
 img{
     width: 50px;
@@ -38,6 +39,7 @@ img{
 }
 .ricerca{
     background-color: white;
+    overflow: hidden;
 }
 .notifiche{
     background-color: var(--azzurro);
