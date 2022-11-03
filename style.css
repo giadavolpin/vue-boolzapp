@@ -13,20 +13,14 @@
 #app > .container {
     height: 90%;
 }
-.navcolor{
-    background-color: var(--verde);
-    height: 100px;
-} 
-.grigio {
-    background-color: rgb(216, 219, 215);
-}   
 .icone{
     color: var(--icone);
 }
-.barContainer{
+.mycontact{
     background-color: rgb(234, 234, 234);
+    height: 70px;
 }
-barContatti{
+.barContatti{
     background-color: rgb(233, 235, 235);
 }
 img{
