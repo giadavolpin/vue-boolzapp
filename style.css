@@ -5,6 +5,9 @@
     --azzurro: rgb(142, 218, 252);
     --nero: black; 
     --michele: rgb(233, 235, 235);
+    --verdesms: rgb(213, 249, 186);
+    --scrivi: rgb(243, 238, 234);
+    --iconesmile: rgb(107, 115, 118);
 }
 #app{
     height: 100vh;
@@ -69,4 +72,15 @@ img{
     flex-flow: column nowrap;
     align-items: flex-start;
     justify-content: flex-start;
+}
+.message.sent{
+    background-color: var(--verdesms);
+    align-self: flex-end;
+}
+.scrivi{
+    background-color: var(--scrivi);
+    height: 70px;
+}
+.iconesmile{
+    color: var(--iconesmile);
 }
