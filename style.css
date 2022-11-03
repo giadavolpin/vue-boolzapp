@@ -4,6 +4,7 @@
     --grigio: rgb(234, 234, 234);
     --azzurro: rgb(142, 218, 252);
     --nero: black; 
+    --michele: rgb(233, 235, 235);
 }
 #app{
     height: 100vh;
@@ -20,8 +21,8 @@
     background-color: rgb(234, 234, 234);
     height: 70px;
 }
-.barContatti{
-    background-color: rgb(233, 235, 235);
+.sfondo-contat{
+    background-color: var(--michele);
 }
 img{
     width: 50px;
@@ -39,17 +40,18 @@ img{
     background-color: white;
 }
 .notifiche{
-    background-color: rgb(142, 218, 252);
+    background-color: var(--azzurro);
+    height: 80px;
 }
 .testo{
     color: rgb(188, 194, 203);
 }
-
 .messagge-wrapper{
     height: calc(100% - 140px);
     background: url(./img/mine.jpg);
     overflow: hidden;
 } 
+
 .messagge{
     position: relative;
     min-height: 40%;
