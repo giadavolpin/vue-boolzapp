@@ -48,13 +48,13 @@ img{
 .testo{
     color: rgb(188, 194, 203);
 }
-.messagge-wrapper{
+.message-wrapper{
     height: calc(100% - 140px);
     background: url(./img/mine.jpg);
     overflow: hidden;
 } 
 
-.messagge{
+.message{
     position: relative;
     min-height: 40%;
     max-width: 60%;
