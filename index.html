@@ -7,24 +7,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
-<body class="grigio">
-    <!-- pagina sotto -->
-    <nav class="navbar navcolor">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-        </div>
-    </nav>
-    
-    <main>   
-      <!-- 2 contenitori  -->
-        
-        <div class="prova container d-flex flex-wrap col vh-100">
-            <div class="col-4 ">
-                <div class=" d-flex justify-content-between ">
-                    <div class="d-flex">
+<body>
+    <div id="app" class="d-flex justify-content-center align-content-center">
+   
+        <div class="container">
+            <div class="col-4 h-100 g-0 bg-white">
+                <div class="col-12 col-sm-12 col-md-4 h-100 border-lightgrey">
+                    <div class="mycontact">
                         <img src="../img/avatar_sofia.jpg" alt="Sofia"> <!-- fare cerchio -->
                         <h6 class="text-center">Sofia</h6> <!-- allinearlo -->
                     </div>
@@ -34,18 +25,18 @@
                         <i class="icone fa-solid fa-ellipsis-vertical"></i>
                     </div>
                 </div>
-                <div class=" sfondoNotific">
+                <div class="notifiche">
                     <!-- icona -->
                     <h6>Ricevi notifiche di nuovi messaggi</h6>
                     <p>Attiva notifiche desktop</p>
                 </div>
-                <div class="sms sfondoContat">
+                <div class="sms ricerca">
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Cerca o inizia una nuova chat">   
                     </form>
                 </div>
-                <div class="sms d-flex flex-column sfondoContat ">
-                   <div class="d-flex">   <!-- fare i cerchi vari -->
+                <div class="sms d-flex flex-column ricerca ">
+                   <div class="d-flex"> 
                         <img src="./img/avatar_1.jpg" alt="">
                         <div class="flex-column ps-2">
                             <h6>Michele</h6>
@@ -104,7 +95,7 @@
                 </div>
             </div>
             <div class="col-6 d-flex flex-wrap justify-content-between">
-                <div class="d-flex prova">
+                <div class="d-flex ">
                     <div>
                         <img src="./img/avatar_1.jpg" alt="Michele">
                         <h6 class="text-center">Michele</h6>
@@ -116,14 +107,19 @@
                         <i class="icone fa-solid fa-ellipsis-vertical"></i>
                     </div>
                 </div>
-               
+                <div class="messagge-wrapper">
+                    <div class="chat">
+                        <div class="messagge">
+                            pippo
+                        </div>
+                        <div class="messagge">
+                            pluto
+                        </div>
+                    </div>
+                </div>
             </div>        
         </div>
-
-
-
-    </main>
-   
+    </div> 
     <script src="./script.js"></script>
 </body>
 </html>

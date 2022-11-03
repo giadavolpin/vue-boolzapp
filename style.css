@@ -1,12 +1,20 @@
 :root{
-    --verdesfondo: rgb(0, 150, 136);
+    --verde: rgb(0, 150, 136);
     --icone: rgb(177, 177, 177);
     --grigio: rgb(234, 234, 234);
     --azzurro: rgb(142, 218, 252);
     --nero: black; 
 }
+#app{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(179.75deg, #009688 23.12%, #D9DBD5 23.13%);
+}
+#app > .container {
+    height: 90%;
+}
 .navcolor{
-    background-color: var(--verdesfondo);
+    background-color: var(--verde);
     height: 100px;
 } 
 .grigio {
@@ -24,20 +32,43 @@ barContatti{
 img{
     width: 50px;
     height: 50px;
+    border-radius: 50%;
 }
 .prova{
     border: 1px solid black; 
 }
 
-.sms{
+.border-lightgrey{
     border: 1px solid rgb(233, 235, 235);
 }
-.sfondoContat{
+.ricerca{
     background-color: white;
 }
-.sfondoNotific{
+.notifiche{
     background-color: rgb(142, 218, 252);
 }
 .testo{
     color: rgb(188, 194, 203);
+}
+
+.messagge-wrapper{
+    height: calc(100% - 140px);
+    background: url(./img/mine.jpg);
+    overflow: hidden;
+} 
+.messagge{
+    position: relative;
+    min-height: 40%;
+    max-width: 60%;
+    font-size: 15px;
+    margin: 5px 0px;
+    padding: 15px 15px 20px;
+    background: rgb(255,255,255);
+    border-radius: 10px;
+}
+.chat{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
