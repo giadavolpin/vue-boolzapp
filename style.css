@@ -1,12 +1,19 @@
+:root{
+    --verdesfondo: rgb(0, 150, 136);
+    --icone: rgb(177, 177, 177);
+    --grigio: rgb(234, 234, 234);
+    --azzurro: rgb(142, 218, 252);
+    --nero: black; 
+}
 .navcolor{
-    background-color: rgb(0, 150, 136);
+    background-color: var(--verdesfondo);
     height: 100px;
 } 
 .grigio {
     background-color: rgb(216, 219, 215);
 }   
 .icone{
-    color: rgb(177, 177, 177);
+    color: var(--icone);
 }
 .barContainer{
     background-color: rgb(234, 234, 234);
