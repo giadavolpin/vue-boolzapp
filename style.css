@@ -27,7 +27,6 @@
 }
 .sfondo-contat{
     background-color: var(--michele);
-    overflow-y: auto;
 }
 img{
     width: 50px;
@@ -55,7 +54,7 @@ img{
 .message-wrapper{
     height: calc(100% - 140px);
     background: url(./img/mine.jpg);
-    overflow: hidden;
+    overflow: auto;
 } 
 
 .message{
