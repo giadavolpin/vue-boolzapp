@@ -43,7 +43,6 @@
                         <img :src="`./img/avatar${contacts[index].avatar}.jpg`">
                         <div class="flex-column ps-2">
                             <h6>{{contacts[index].name}}</h6>
-
                             <p class="testo">{{contacts[index].messages[(contacts[index].messages.length -1)].message}}</p>
                         </div>
                     </div>
@@ -54,9 +53,11 @@
             <div class="col-8 g-0">
                 <div class=" mycontact d-flex g-0 justify-content-between align-items-center">
                     <div class=" d-flex">
-                        <img src="./img/avatar_1.jpg" alt="Michele">
-                        <h6 class="text-center">Michele</h6>
-                        <!-- <p class="">{{data}}</p> -->  <!-- dopo sistemare --> 
+                        <img :src="`./img/avatar${contacts[currentChat].avatar}.jpg`">
+                        <div>
+                            <h6 class="">{{contacts[currentChat].name}}</h6>
+                            <div class="">{{contacts[currentChat].messages[contacts[currentChat].messages.length -1].date}}</div>
+                        </div>
                     </div>
                     <div class="d-flex">
                         <i class="icone fa-solid fa-magnifying-glass"></i>
@@ -67,7 +68,7 @@
     <!-- messaggi -->
                 <div class="message-wrapper">
                     <div class="chat" v-for="(item,index) in contacts[currentChat].messages" >
-                        <div class="message" :class="{'sent': item.status == 'sent'}" > 
+                        <div class="message" :class="item.status" > 
                             {{item.message}}
                         </div>
                     </div>
