@@ -41,7 +41,7 @@
                 <div class="d-flex flex-column chat-wrapper">
                    <div class="d-flex" v-for="(item, index) in contacts" :key="item.id"> 
                         <img :src="`./img/avatar${contacts[index].avatar}.jpg`">
-                        <div class="flex-column ps-2">
+                        <div class="flex-column ps-2" @click="mostraChat(index)">
                             <h6>{{contacts[index].name}}</h6>
                             <p class="testo">{{contacts[index].messages[(contacts[index].messages.length -1)].message}}</p>
                         </div>
@@ -53,10 +53,10 @@
             <div class="col-8 g-0">
                 <div class=" mycontact d-flex g-0 justify-content-between align-items-center">
                     <div class=" d-flex">
-                        <img :src="`./img/avatar${contacts[currentChat].avatar}.jpg`">
+                        <img :src="`./img/avatar${contacts[activeChat].avatar}.jpg`">
                         <div>
-                            <h6 class="">{{contacts[currentChat].name}}</h6>
-                            <div class="">{{contacts[currentChat].messages[contacts[currentChat].messages.length -1].date}}</div>
+                            <h6 class="">{{contacts[activeChat].name}}</h6>
+                            <div class="">{{contacts[activeChat].messages[contacts[activeChat].messages.length -1].date}}</div>
                         </div>
                     </div>
                     <div class="d-flex">
@@ -67,7 +67,7 @@
                 </div>
     <!-- messaggi -->
                 <div class="message-wrapper">
-                    <div class="chat" v-for="(item,index) in contacts[currentChat].messages" >
+                    <div class="chat" v-for="(item,index) in contacts[activeChat].messages" >
                         <div class="message" :class="item.status" > 
                             {{item.message}}
                         </div>
